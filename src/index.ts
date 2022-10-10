@@ -4,11 +4,7 @@ import router  from './routes';
 import * as dotenv from "dotenv";
 dotenv.config({path: __dirname + '/.env'});
 
-const app = express()
-
-app.get('/', (req, res) => {
-    res.send("Hello worfe")
-})
+const app = express();
 
 app.use(router);
 app.use(cors<Request>);
