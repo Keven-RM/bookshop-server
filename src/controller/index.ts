@@ -3,7 +3,6 @@ import Book from '../model'
 
 const createBook = async (req: Request, res: Response,) => {
     const { name, author, description, rating } = req.body;
-    console.log(req.body);
     
     Book.create({
         name: name,
